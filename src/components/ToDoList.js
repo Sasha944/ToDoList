@@ -18,7 +18,7 @@ const ToDoList = (
         array = [...items.filter((item) => !item.isCompleted)];
     return (
     <>
-        <ul>
+        <ul className="todo-list container">
             {array.map(i => <ToDoItem onRemoveClick={onToDoRemoveClick} onClick={onToDoClick} key={i.id} id={i.id} {...i} is={i.isCompleted}/>)}
         </ul>
     </>

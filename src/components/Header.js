@@ -9,7 +9,7 @@ const Header = ({
                     changeFilterCompleted,
                     changeFilterActive
                 }) => (
-    <div>
+    <div class="container">
         <input value={value} onChange={event => onChangeText(event.target.value)}/>
         <button onClick={onClick}>
             Add item

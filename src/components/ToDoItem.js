@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const ToDoItem = ({
                       title,
                       id,
@@ -17,6 +15,6 @@ const ToDoItem = ({
             </button>
         </li>
     );
-}
+};
 
 export default ToDoItem;

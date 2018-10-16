@@ -95,8 +95,15 @@ class App extends Component {
     render() {
         return (
             <>
-                <Header changeFilterAll={this.changeFilterAll} changeFilterCompleted={this.changeFilterCompleted} changeFilterActive={this.changeFilterActive} value={this.state.text} onChangeText={this.onChangeInputText} onClick={this.handleChangeText}/>
-                <TodoList onToDoRemoveClick={this.onToDoRemoveClick}  filter={this.state.filter} items={this.state.items}
+                <Header changeFilterAll={this.changeFilterAll}
+                        changeFilterCompleted={this.changeFilterCompleted}
+                        changeFilterActive={this.changeFilterActive}
+                        value={this.state.text}
+                        onChangeText={this.onChangeInputText}
+                        onClick={this.handleChangeText}/>
+                <TodoList onToDoRemoveClick={this.onToDoRemoveClick}
+                          filter={this.state.filter}
+                          items={this.state.items}
                           onToDoClick={this.handleToDoClick}/>
             </>
         );
